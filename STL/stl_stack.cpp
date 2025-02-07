@@ -14,7 +14,7 @@ int main(){
     
     cout<<stk.top()<<endl; // prints 7
     cout<<stk.size()<<endl; // 5
-    cout<<stk.empty()<<endl; // 0
+    cout<<stk.empty()<<endl; // 0 means False
 
     stack<int> stk1;
     stk.swap(stk1); // swap stk and stk1
