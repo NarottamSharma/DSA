@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
+// Function to print each digit of a number
 int printDigit(int n){
     while(n!=0){
         int lastDigit = n%10;
@@ -11,6 +11,7 @@ int printDigit(int n){
     return 0 ;
 }
 
+// Function to count the number of digits in a number
 int Count(int n){
     int count = 0;
     while(n!=0){ 
@@ -22,6 +23,7 @@ int Count(int n){
     return 0;
 }
 
+// Function to reverse a number
 int reversePrint(int n){
     int rev =0;
     while (n!=0){
@@ -33,7 +35,7 @@ int reversePrint(int n){
     return rev;
 }
 
-
+// Function to check if a number is a palindrome
 int palindrome(int n){
     int n1=n;
     if(n1 == reversePrint(n)){
@@ -44,7 +46,7 @@ int palindrome(int n){
     return 0;
 }
 
-
+// Function to check if a number is prime
 int factors(int n){
     vector<int> divisors;
     for(int i =1;i*i<=n;i++){
