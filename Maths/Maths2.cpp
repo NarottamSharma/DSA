@@ -3,6 +3,18 @@ using namespace std;
 
 int gcd(int a, int b){
     // gcd(a,b)=gcd(a-b,b)==gcd(a%b,b) if a>=0
+    //M 1
+    while(b!=0){
+        int temp =b;
+        b = a%b;
+        a = temp;
+    }
+    cout<<a<<endl;
+    return a;
+
+
+
+    /* M-2
     while(a!=0&& b!=0){
         if(a>b){
             a = a%b;
@@ -16,7 +28,7 @@ int gcd(int a, int b){
     else cout<<a<<endl;
 
 
-
+    M-3
    /* int temp =1;
     for(int i =1;i<=min(num1,num2);i++){
         if(num1%i==0 && num2%i==0){
@@ -25,10 +37,10 @@ int gcd(int a, int b){
         // TC = O(min(a,b))
     }
     cout<<temp<<endl;*/
-    return 0;
+   // return 0;
 }
 
 
 int main(){
-    gcd(120,180);
+    gcd(100,50);
 }
