@@ -29,6 +29,6 @@ void printSum(int i,int sum){
 
 int main(){
     //printNum(1,10);
-    //backtracingPrint(5);
-    printSum(5,0);
+    backtracingPrint(5);
+    //printSum(5,0);
 }

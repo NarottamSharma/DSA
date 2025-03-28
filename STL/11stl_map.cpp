@@ -47,9 +47,39 @@ int main() {
     mm.insert({2, "Charlie"});
 
 // Unordered Map
+    // An unordered_map is similar to a map, but it does not maintain any 
+    // order for its keys. It's typically faster than map because it uses a hash table internally.
     unordered_map<int, string> um;
-    um[1] = "Alice";
-    um[2] = "Bob";
+
+    // Inserting elements into the unordered_map
+    um[1] = "Alice";     // Insert key 1 with value "Alice"
+    um[2] = "Bob";       // Insert key 2 with value "Bob"
+    um[3] = "Charlie";   // Insert key 3 with value "Charlie"
+    um[4] = "David";     // Insert key 4 with value "David"
+
+    // Printing unordered_map contents: Order of elements may vary
+    cout << "Unordered Map contents:\n";
+    for (auto i : um) {
+        cout << i.first << " -> " << i.second << endl;
+    }
+
+    // Accessing a value using the key
+    cout << "\nValue at key 2: " << um[2] << endl;  // Output: Bob
+
+    // Using the `find()` method to search for a key
+    auto iter = um.find(3);  // Search for key 3
+    if (iter != um.end()) {
+        cout << "Found key 3: " << iter->second << endl;  // Output: Charlie
+    } else {
+        cout << "Key 3 not found!" << endl;
+    }
+
+    // If we search for a key that doesn't exist:
+    auto iter2 = um.find(10);  // Search for key 10
+    if (iter2 == um.end()) {
+        cout << "Key 10 not found!" << endl;  // Output: Key 10 not found!
+    }
+
 
 
 
