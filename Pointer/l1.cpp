@@ -1,6 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+void changeA(int* ptr){
+    *ptr = 20;
+}
+
+
 int main(){
     int a = 10;
     cout<< &a<< endl;         // Prints the address of variable 'a' (& is the address-of operator)
@@ -16,6 +21,10 @@ int main(){
     cout<< z<< endl;          // Prints garbage value (whatever address is in 'z')
     int* y = NULL;            // 'y' is a pointer initialized to NULL (doesn't point anywhere)
     cout<< &y<< endl;         // Prints the address of pointer variable 'y'
+
+    // pass by referense 
+    changeA(&a);
+    cout<<a<<endl;//20
 
     // & (address-of): gives the memory address of a variable.
     // * (dereference): accesses the value at the address a pointer is pointing to.
