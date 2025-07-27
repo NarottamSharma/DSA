@@ -54,7 +54,8 @@ void hashstring(){
 
 int main(){
 
-    //hashint();
-    hashstring();
+    // hashint();
+    cout<<"Hi Narottam";
+    // hashstring();
     return 0;
 }
