@@ -1,2 +1,8 @@
-hi
-1
+string Length 3
+abcdef
+Narottam
+NarottamSharma
+0
+Narottam Amazing
+N a r o t t a m   A m a z i n g 
+N a r o t t a m   A m a z i n g 

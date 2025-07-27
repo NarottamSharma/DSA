@@ -1,0 +1,19 @@
+# Ignore executable files
+*.exe
+
+# Ignore specific input/output files
+input.txt
+output.txt
+
+# Optional: Ignore all .txt files (uncomment if needed)
+*.txt
+
+# Ignore common build artifacts
+*.o
+*.obj
+*.a
+*.lib
+
+# Ignore temporary files
+*.tmp
+*.temp
