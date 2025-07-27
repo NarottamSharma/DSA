@@ -27,10 +27,14 @@ int main(){
     for(auto ch:s4){
         cout<<ch<<" ";
     }
+    cout<<endl;
 
     // Reverse a Sting 
-    
+    reverse(s4.begin(),s4.end());
+    cout<<s4<<endl;
 
+    // valid Palindrome
+    
 
 
     return 0;
