@@ -35,7 +35,26 @@ int main(){
 
     // valid Palindrome
     
-
+    // Function to check if character is alphanumeric
+    bool isAlphaNumeric(char ch) {
+        return (ch >= '0' && ch <= '9') || 
+               (ch >= 'a' && ch <= 'z') || 
+               (ch >= 'A' && ch <= 'Z');
+    }
+    
+    // Alternative using built-in function
+    bool isAlphaNumericBuiltIn(char ch) {
+        return isalnum(ch);
+    }
+    
+    // Test the functions
+    char testChar = 'A';
+    cout << "Is '" << testChar << "' alphanumeric? " << isAlphaNumeric(testChar) << endl;
+    cout << "Using built-in: " << isAlphaNumericBuiltIn(testChar) << endl;
+    
+    testChar = '@';
+    cout << "Is '" << testChar << "' alphanumeric? " << isAlphaNumeric(testChar) << endl;
+    cout << "Using built-in: " << isAlphaNumericBuiltIn(testChar) << endl;
 
     return 0;
 }
