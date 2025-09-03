@@ -70,7 +70,9 @@ int main(){
   cout<<(int)xyz<<endl;
 
 
-
+  // Fast io
+  ios::sync_with_stdio(false); cin.tie(NULL);
+  
 
 
 }
