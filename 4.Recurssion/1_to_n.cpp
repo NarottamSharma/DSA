@@ -26,9 +26,14 @@ void printSum(int i,int sum){
     printSum(i-1,sum+i);
 }
 
+void rec(){
+    cout << "Hi" << endl;
+    rec();
+}
 
 int main(){
     //printNum(1,10);
-    backtracingPrint(5);
+    // backtracingPrint(5);
     //printSum(5,0);
+    rec();
 }

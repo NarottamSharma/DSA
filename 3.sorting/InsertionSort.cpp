@@ -1,6 +1,23 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/**
+ * @brief Sorts an array using the insertion sort algorithm
+ * 
+ * This function implements the insertion sort algorithm, which builds the final
+ * sorted array one item at a time. It works by iterating through the array and
+ * for each element, finding its correct position in the already sorted portion
+ * and inserting it there by shifting other elements as needed.
+ * 
+ * Time Complexity: O(n²) in worst case, O(n) in best case (already sorted)
+ * Space Complexity: O(1) - sorts in place
+ * 
+ * @param arr The integer array to be sorted (modified in place)
+ * @param n The number of elements in the array
+ * 
+ * @note The array is sorted in ascending order
+ * @note The function contains a local 'count' variable that tracks swaps but doesn't return it
+ */
 void insertionSort(int arr[], int n ){
     int count = 0;
     for(int i =1; i < n; i++){

@@ -4,6 +4,9 @@ using namespace std;
 int main() {
     deque<int> deque_1;
 
+   /*What is a Deque? 🤔
+A deque is like a flexible array that can efficiently grow and shrink from both ends. Think of it as a deck of cards where you can easily add or remove cards from the top OR bottom.*/
+
     // Insert elements at both ends
     deque_1.push_back(5);     // {5}
     deque_1.emplace_back(7);  // {5, 7}
